@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Produce E-commerce</title>
+    <link rel="stylesheet" href="sample.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">AgriMarket</div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search products...">
+            <button id="search-btn">Search</button>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#cart">
+                Cart (<span id="cart-count">0</span>)
+            </a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Fresh Agricultural Produce Delivered to Your Doorstep</h1>
+            <p>Shop fresh fruits, vegetables, grains, and more</p>
+            <a href="#products" class="shop-now-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <!-- Example of a product -->
+            <div class="product-card">
+                <img src="images/apple.jpg" alt="Apple">
+                <h3>Fresh Apples</h3>
+                <p>$3.00 per kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Repeat for more products -->
+            <div class="product-card">
+                <img src="images/carrot.jpg" alt="Carrot">
+                <h3>Fresh Carrots</h3>
+                <p>$2.00 per kg</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details (Example) -->
+    <section id="product-details" class="product-details">
+        <h2>Product Details</h2>
+        <div class="details-card">
+            <img src="images/apple.jpg" alt="Apple">
+            <h3>Fresh Apples</h3>
+            <p>Price: $3.00 per kg</p>
+            <p>Description: Freshly harvested apples from local farms. Perfect for eating or juicing.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 AgriMarket. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

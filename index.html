@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural E-Commerce Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header with Logo and Navigation -->
+    <header>
+        <div class="inlinee">
+            <div class="logo">
+                <h1>AgriMarket</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search products...">
+                <button id="search-btn">Search</button>
+            </div>
+        
+        </div>
+       
+        <nav>
+            <a href="#products">Featured Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a class="loog" href="/login/">LOGIN</a>
+            <a href="/signup/">SIGN UP</a>
+            <a href="javascript:void(0);" id="cart-icon" class="cart-icon">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to AgriMarket</h2>
+            <p>Your one-stop platform for fresh agricultural produce</p>
+            <a href="#products" class="cta-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <!-- Product Cards (Example with 6 products, add more by copying the div.product-card) -->
+            <div class="product-card" data-id="1" data-name="Fresh Apples" data-price="3.00">
+                <img src="fruits.jpg" alt="Fruits">
+                <div class="product-info">
+                    <h3>Fresh Fruits</h3>
+                    <p>$3.00 per kg</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card" data-id="2" data-name="Fresh Carrots" data-price="2.00">
+                <img src="greens.jpg" alt="greens">
+                <div class="product-info">
+                    <h3>Fresh Greens</h3>
+                    <p>$2.00 per kg</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card" data-id="2" data-name="Pumpkins" data-price="2.00">
+                <img src="pumpkin.jpg" alt="Pumpkins">
+                <div class="product-info">
+                    <h3>Pumpkins</h3>
+                    <p>$2.00 per kg</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card" data-id="2" data-name="Fresh Maize" data-price="2.00">
+                <img src="maize.jpg" alt="Maize">
+                <div class="product-info">
+                    <h3>Maize</h3>
+                    <p>$2.00 per kg</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card" data-id="3" data-name="Fresh Bananas" data-price="1.50">
+                <img src="agri 5.jpg" alt="Fresh Bananas">
+                <div class="product-info">
+                    <h3>Eggs</h3>
+                    <p>$1.50 per bunch</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card" data-id="4" data-name="Fresh Tomatoes" data-price="2.50">
+                <img src="agri 3.jpg" alt="Fresh Tomatoes">
+                <div class="product-info">
+                    <h3>Salads</h3>
+                    <p>$2.50 per kg</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card" data-id="5" data-name="Fresh Avocados" data-price="4.00">
+                <img src="coffee.jpg" alt="Fresh Avocados">
+                <div class="product-info">
+                    <h3>Coffee</h3>
+                    <p>$4.00 per piece</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card" data-id="6" data-name="Fresh Mangoes" data-price="3.50">
+                <img src="hens.jpg" alt="Fresh Mangoes">
+                <div class="product-info">
+                    <h3>Hens</h3>
+                    <p>$3.50 per piece</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We connect farmers to consumers, offering a wide range of fresh agricultural products directly from the farm to your doorstep.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Feel free to reach out!</p>
+        <form action="/submit-contact" method="POST">
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 AgriMarket. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <h3>Your Cart</h3>
+            <ul id="cart-items"></ul>
+            <div id="cart-total">
+                <p>Total: $<span id="total-price">0.00</span></p>
+            </div>
+            <button id="checkout-btn">Checkout</button>
+            <button id="close-cart-btn">Close</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

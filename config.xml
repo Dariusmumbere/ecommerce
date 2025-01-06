@@ -1,0 +1,20 @@
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0"
+        id="com.example.app"
+        version="1.0.0">
+  <name>Darius</name>
+  <description>Task manager</description>
+  <author email="dariusmumbere@gmail.com" href="http://dariusmumbere.github.io/personal.com">Mumbere Darius</author>
+
+  <!-- Main app icon -->
+  <icon src="icons/icon.png" />
+
+  <!-- Additional icons for different screen sizes (optional) -->
+  <icon src="icons/icon-48.png" density="ldpi"/>
+  <icon src="icons/icon-72.png" density="mdpi"/>
+  <icon src="icons/icon-96.png" density="hdpi"/>
+  <icon src="icons/icon-144.png" density="xhdpi"/>
+  <icon src="icons/icon-192.png" density="xxhdpi"/>
+
+  <content src="index.html"/>
+</widget>
